@@ -25,6 +25,7 @@ font-family: "regular";
   color: #e8e5d2;
   font-size: 1.3rem;
   text-decoration: none;
+  font-family: "regular";
 }
 
 #about:hover, #cube:hover,
@@ -36,7 +37,7 @@ font-family: "regular";
     margin-left: 70%;
   }
   #hero {
-    height: 600px;
+    height: 700px;
     background: linear-gradient(rgba(3, 0, 0, 1), rgba(3, 0, 0, 1));
     background-image: url('/img/guitarHero2.jpg');
     background-repeat: no-repeat;
@@ -48,7 +49,7 @@ font-family: "regular";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -20%);
   }
   #slogan {
     text-align: center;
@@ -57,14 +58,14 @@ font-family: "regular";
     font-family: "bold";
     font-size: 4rem;
     letter-spacing: -5px;
-    color: #143649;
+    color: #08151d;
     animation: fade-in 1s;
   }
   
   #hero-text p {
     text-align: center;
     font-family: "bold";
-    color: #143649;
+    color: #08151d;
     font-size: 3rem;
     animation: fade-in 1s;
   
@@ -96,7 +97,7 @@ color: #06141c;
     width: 90%;
    }
    .guitar-card:hover {
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px ;
   }
    
@@ -157,9 +158,117 @@ font-size: 1.5rem;
     align-items: center;
    }
    .cubo-card:hover {
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px ;
   }
   .cubos {
     width: 90%;
   }
+  #abouts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #about-section {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 100px;
+   padding-bottom: 50px;
+  }
+  .about-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-card h1 {
+ font-family: "regular";
+ color: #06141c;
+ padding-left: 20px;
+  }
+  .information-about {
+    display: flex;
+    width: 100%;
+    font-family: "regular";
+    flex-direction: column;
+    color: #06141c;
+    gap: 20px;
+    font-size:20px ;
+    padding-left: 20px;
+    
+  }
+  .text-about:hover {
+    cursor: pointer;
+    color: #799094;
+  }
+
+  #about-text {
+    font-family: "regular";
+    font-size: 16px;
+  }
+
+  #contact-card {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-card h1 {
+    font-family: "regular";
+    color: #06141c;
+
+  }
+
+.text-contact {
+    display: flex;
+    width: 100%;
+    font-family: "regular";
+    flex-direction: column;
+    color: #06141c;
+    gap: 20px;
+    font-size:20px ;
+}
+
+#contact-card hr {
+border: none; 
+height: 2px;
+background-color: #06141c; 
+margin: 0px 0 20px 0; 
+
+ }
+.about-card hr {
+border: none;
+width: 100%;
+height: 2px; 
+background-color: #06141c; 
+margin: 0px 0 20px 0;
+margin-left: 20px;
+}
+footer {
+display: flex;
+flex-direction: row;
+background-color:#06141c;
+padding: 10px 20px;
+align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer p {
+color:#e8e5d2;
+font-family: "thin";
+font-size: 14px;
+text-align: center;
+}
+.redes-sociais {
+  display: flex;
+  flex-direction: row;
+  width: 7%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.redes-sociais img {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color:#e8e5d2 ;
+}

@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-size: 1rem;
+    background-color: #e8e5d2;
+  }
+  header {
+    background-color:#06141c;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  header h1 {
+    color: #e8e5d2;
+  font-size: 1.3rem;
+font-family: "regular";
+  }
+  header img {
+    width: 4%;
+  }
+
+#about, #cube,
+#products {
+  color: #e8e5d2;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#about:hover, #cube:hover,
+#products:hover {
+  color: #ccc;
+}
+
+#about {
+    margin-left: 70%;
+  }
+  #hero {
+    height: 600px;
+    background: linear-gradient(rgba(3, 0, 0, 1), rgba(3, 0, 0, 1));
+    background-image: url('/img/guitarHero2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+  }
+  #hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #slogan {
+    text-align: center;
+  }
+  #slogan span {
+    font-family: "bold";
+    font-size: 4rem;
+    letter-spacing: -5px;
+    color: #143649;
+    animation: fade-in 1s;
+  }
+  
+  #hero-text p {
+    text-align: center;
+    font-family: "bold";
+    color: #143649;
+    font-size: 3rem;
+    animation: fade-in 1s;
+  
+  }
+ 
+
+.products {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+padding-bottom: 50px;
+}
+#products-title, #cubo-title{
+font-family: "bold";
+font-size: 2.2rem;
+color: #06141c;
+   }
+   #products-subtitle, #cubo-subtitle {
+    font-family: "regular";
+font-size: 2.0rem;
+color: #06141c;
+   }
+   .guitar {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+   }
+   .guitar-card {
+    width: 90%;
+   }
+   .guitar-card:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px ;
+  }
+   
+   .information-guitar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   .name-guitar{
+    display: flex;
+text-align: center;
+justify-content: center;
+font-family:"bold";
+font-size: 1.5rem;
+   }
+   .prize {
+    display: flex;
+    font-family:"regular";
+    text-decoration: line-through;
+    color: #615e5e;
+    text-align: center;
+   }
+   .new-prize {
+    font-family:"bold";
+    color: red;
+    font-size: 1.5rem;
+   }
+   .buy-button {
+    background-color: #3f7c41; 
+   font-family: "regular";
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+   }
+   .guitars {
+    width: 100%;
+   }
+   .cubo {
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding-bottom: 50px;
+ background-color:#799094;
+   }
+   .cubo-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .cubo-card:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 20px ;
+  }
+  .cubos {
+    width: 90%;
+  }

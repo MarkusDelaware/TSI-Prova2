@@ -1,267 +1,246 @@
 body {
-    margin: 0;
-    font-size: 1rem;
-    background-color: #e8e5d2;
-  }
-  header {
-    background-color:#06141c;
-    padding: 10px 20px;
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    box-sizing: border-box;
-  }
-  header h1 {
-    color: #e8e5d2;
-  font-size: 5rem;
+  margin: 0;
+  font-size: 1rem;
+  background-color: #e8e5d2;
+}
+header {
+  background-color:#06141c;
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+header h1 {
+  color: #e8e5d2;
+font-size: 1.3rem;
 font-family: "regular";
-animation: pulse 2s infinite;
-  }
-  header img {
-    width: 5%;
-    animation: pulse 2s infinite;
-  }
+}
+header img {
+  width: 4%;
+}
 
 #about, #cube,
 #products {
-  color: #e8e5d2;
-  font-size: 5rem;
-  text-decoration: none;
-  font-family: "regular";
-  animation: pulse 2s infinite;
+color: #e8e5d2;
+font-size: 1.3rem;
+text-decoration: none;
+font-family: "regular";
 }
 
 #about:hover, #cube:hover,
 #products:hover {
-  color: #ccc;
+color: #ccc;
 }
 
 #about {
-    margin-left:auto;
-  }
-  #hero {
-    height: 3000px;
-    background: linear-gradient(rgba(3, 0, 0, 1), rgba(3, 0, 0, 1));
-    background-image: url('/img/guitarHero2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    position: relative;
-  }
-  #hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: hero-move 15s infinite;
-    transition: ease-in-out;
-  }
-  #slogan {
-    text-align: center;
-  }
-  #slogan span {
-    font-family: "bold";
-    font-size: 14rem;
-    letter-spacing: -5px;
-    color: #08151d;
-   
-  }
-  
-  #hero-text p {
-    text-align: center;
-    font-family: "bold";
-    color: #08151d;
-    font-size: 13rem;
+  margin-left:auto;
+}
+#hero {
+  height: 700px;
+  background: linear-gradient(rgba(3, 0, 0, 1), rgba(3, 0, 0, 1));
+  background-image: url('/img/guitarHero2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  position: relative;
+}
+#hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
+#slogan {
+  text-align: center;
+}
+#slogan span {
+  font-family: "bold";
+  font-size: 4rem;
+  letter-spacing: -5px;
+  color: #08151d;
+  animation: fade-in 1s;
+}
 
-  
-  }
+#hero-text p {
+  text-align: center;
+  font-family: "bold";
+  color: #08151d;
+  font-size: 3rem;
+  animation: fade-in 1s;
+
+}
+
 
 .products {
- display: flex;
- flex-direction: column;
- align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 padding-bottom: 50px;
-width: 100%;
 }
 #products-title, #cubo-title{
 font-family: "bold";
-font-size: 10rem;
+font-size: 2.2rem;
 color: #06141c;
-   }
-   #products-subtitle, #cubo-subtitle {
-    font-family: "regular";
-font-size: 9rem;
+ }
+ #products-subtitle, #cubo-subtitle {
+  font-family: "regular";
+font-size: 2.0rem;
 color: #06141c;
-   }
-   .guitar {
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    gap: 20px;
-    justify-content: space-around;
-    width: 100%;
-   }
-   .guitar-card {
-    width: 23%;
-    border-radius: 20px ;
-    animation: pulse 2s infinite;
-   }
-   .guitar-card:hover {
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 20px ;
-    animation: shake 1s;
-  }
-   
-   .information-guitar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   .name-guitar{
-    display: flex;
+ }
+ .guitar {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+ }
+ .guitar-card {
+  width: 90%;
+ }
+ .guitar-card:hover {
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px ;
+}
+ 
+ .information-guitar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .name-guitar{
+  display: flex;
 text-align: center;
 justify-content: center;
 font-family:"bold";
-font-size: 5rem;
-   }
-   .prize {
-    display: flex;
-    font-family:"regular";
-    text-decoration: line-through;
-    color: #615e5e;
-    text-align: center;
-    font-size: 3rem;
-   }
-   .new-prize {
-    font-family:"bold";
-    color: red;
-    font-size: 5rem;
-   }
-   .buy-button {
-    background-color: #3f7c41; 
-   font-family: "regular";
-    border: none;
-    color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 5rem;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-   }
-   .guitars {
-    width: 100%;
-   
-   }
-   .cubo {
-    display: flex;
- flex-direction: column;
- align-items: center;
- padding-bottom: 50px;
- background-color:#799094;
-   }
-   .cubo-card {
-    width: 23%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px ;
-    animation: pulse 2s infinite;
-    
-   }
-   .cubo-card:hover {
-    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
-    border-radius: 20px ;
-    animation: shake 1.0s;
-  }
-  .cubos {
-    width: 90%;
-  }
-  #abouts {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #about-section {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    gap: 100px;
-   padding-bottom: 50px;
-  }
-  .about-card {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-  }
-  .about-card h1 {
+font-size: 1.5rem;
+ }
+ .prize {
+  display: flex;
+  font-family:"regular";
+  text-decoration: line-through;
+  color: #615e5e;
+  text-align: center;
+ }
+ .new-prize {
+  font-family:"bold";
+  color: red;
+  font-size: 1.5rem;
+ }
+ .buy-button {
+  background-color: #3f7c41; 
  font-family: "regular";
- color: #06141c;
- padding-left: 20px;
- font-size: 7rem;
-  }
-  .information-about {
-    display: flex;
-    width: 100%;
-    font-family: "regular";
-    flex-direction: column;
-    color: #06141c;
-    gap: 80px;
-    font-size:20px ;
-    padding-left: 20px;
-    
-  }
-  .text-about {
-    font-size: 5rem;
-  }
-  .text-about:hover {
-    cursor: pointer;
-    color: #799094;
-  }
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+ }
+ .guitars {
+  width: 100%;
+ }
+ .cubo {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 50px;
+background-color:#799094;
+ }
+ .cubo-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .cubo-card:hover {
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 20px ;
+}
+.cubos {
+  width: 90%;
+}
+#abouts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#about-section {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 100px;
+ padding-bottom: 50px;
+}
+.about-card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.about-card h1 {
+font-family: "regular";
+color: #06141c;
+padding-left: 20px;
+}
+.information-about {
+  display: flex;
+  width: 100%;
+  font-family: "regular";
+  flex-direction: column;
+  color: #06141c;
+  gap: 20px;
+  font-size:20px ;
+  padding-left: 20px;
+  
+}
+.text-about:hover {
+  cursor: pointer;
+  color: #799094;
+}
 
-  #about-text {
-    font-family: "regular";
-    font-size: 4rem;
-  }
+#about-text {
+  font-family: "regular";
+  font-size: 16px;
+}
 
-  #contact-card {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-  }
-  #contact-card h1 {
-    font-family: "regular";
-    color: #06141c;
-    font-size: 7rem;
-  }
+#contact-card {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#contact-card h1 {
+  font-family: "regular";
+  color: #06141c;
+
+}
 
 .text-contact {
-    display: flex;
-    width: 100%;
-    font-family: "regular";
-    flex-direction: column;
-    color: #06141c;
-    gap: 80px;
-    font-size:20px ;
+  display: flex;
+  width: 100%;
+  font-family: "regular";
+  flex-direction: column;
+  color: #06141c;
+  gap: 20px;
+  font-size:20px ;
 }
 
 #contact-card hr {
 border: none; 
-height: 7px;
+height: 2px;
 background-color: #06141c; 
-margin: 0px 0 90px 0; 
+margin: 0px 0 20px 0; 
 
- }
+}
 .about-card hr {
 border: none;
 width: 100%;
-height: 7px; 
+height: 2px; 
 background-color: #06141c; 
-margin: 0px 0 90px 0;
+margin: 0px 0 20px 0;
 margin-left: 20px;
 }
 footer {
@@ -270,26 +249,26 @@ flex-direction: row;
 background-color:#06141c;
 padding: 10px 20px;
 align-items: center;
-  justify-content: center;
-  gap: 50px;
+justify-content: center;
+gap: 10px;
 }
 footer p {
 color:#e8e5d2;
 font-family: "thin";
-font-size: 4rem;
+font-size: 14px;
 text-align: center;
 }
 .redes-sociais {
-  display: flex;
-  flex-direction: row;
-  width: 10%;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
+display: flex;
+flex-direction: row;
+width: 7%;
+gap: 10px;
+align-items: center;
+justify-content: center;
 }
 .redes-sociais img {
-  display: flex;
-  flex-direction: row;
-  width: 70%;
-  color:#e8e5d2 ;
+display: flex;
+flex-direction: row;
+width: 100%;
+color:#e8e5d2 ;
 }

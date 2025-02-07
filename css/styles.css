@@ -47,7 +47,7 @@ color: #ccc;
   background-size: cover; 
   background-position: center;
   position: relative;
-  animation: hero-move 15s infinite;
+
   transition: ease-in-out;
 }
 #hero-text {
@@ -55,6 +55,7 @@ color: #ccc;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -20%);
+  animation: hero-move 15s infinite;
 }
 #slogan {
   text-align: center;
@@ -64,7 +65,6 @@ color: #ccc;
   font-size: 4rem;
   letter-spacing: -5px;
   color: #08151d;
-  animation: fade-in 1s;
 }
 
 #hero-text p {
@@ -72,8 +72,6 @@ color: #ccc;
   font-family: "bold";
   color: #08151d;
   font-size: 3rem;
-  animation: fade-in 1s;
-
 }
 
 

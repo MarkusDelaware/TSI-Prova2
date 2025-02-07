@@ -40,4 +40,4 @@ Guitarras! com os melhores preços!" Esta seção cria um impacto visual e atrai
 - **Página de Contato**: Fornece informações de contato, como número de telefone e email, para que os clientes possam entrar em contato facilmente com a loja.
 - **Rodapé**: Ícones das redes sociais da loja, e os direitos autorais do site.
 ## Como Usar
-Você pode acessar o site através do seguinte link: [Strings & Sounds no Vercel](https://seu-site.vercel.app)
+Você pode acessar o site através do seguinte link: [Strings & Sounds no Vercel](https://tsi-prova2.vercel.app/)

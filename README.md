@@ -7,7 +7,6 @@
 - [Objetivos](#objetivos)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Funcionalidades](#funcionalidades)
-- [Capturas de Tela](#capturas-de-tela)
 - [Como Usar](#como-usar)
 
 ## Descrição

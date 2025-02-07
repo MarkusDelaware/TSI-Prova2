@@ -15,9 +15,11 @@ header h1 {
   color: #e8e5d2;
 font-size: 1.3rem;
 font-family: "regular";
+animation: pulse 2s infinite;
 }
 header img {
   width: 4%;
+  animation: pulse 2s infinite;
 }
 
 #about, #cube,
@@ -26,6 +28,7 @@ color: #e8e5d2;
 font-size: 1.3rem;
 text-decoration: none;
 font-family: "regular";
+animation: pulse 2s infinite;
 }
 
 #about:hover, #cube:hover,
@@ -44,6 +47,8 @@ color: #ccc;
   background-size: cover; 
   background-position: center;
   position: relative;
+  animation: hero-move 15s infinite;
+  transition: ease-in-out;
 }
 #hero-text {
   position: absolute;
@@ -95,10 +100,12 @@ color: #06141c;
  }
  .guitar-card {
   width: 90%;
+  animation: pulse 2s infinite;
  }
  .guitar-card:hover {
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
   border-radius: 20px ;
+  animation: shake 1s;
 }
  
  .information-guitar{
@@ -156,10 +163,12 @@ background-color:#799094;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: pulse 2s infinite;
  }
  .cubo-card:hover {
   box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
   border-radius: 20px ;
+  animation: shake 1.0s;
 }
 .cubos {
   width: 90%;

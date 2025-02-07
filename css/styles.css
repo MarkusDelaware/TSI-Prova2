@@ -7,25 +7,28 @@ body {
     background-color:#06141c;
     padding: 10px 20px;
     display: flex;
-    gap: 20px;
+    gap: 60px;
     align-items: center;
     box-sizing: border-box;
   }
   header h1 {
     color: #e8e5d2;
-  font-size: 1.3rem;
+  font-size: 5rem;
 font-family: "regular";
+animation: pulse 2s infinite;
   }
   header img {
-    width: 4%;
+    width: 5%;
+    animation: pulse 2s infinite;
   }
 
 #about, #cube,
 #products {
   color: #e8e5d2;
-  font-size: 1.3rem;
+  font-size: 5rem;
   text-decoration: none;
   font-family: "regular";
+  animation: pulse 2s infinite;
 }
 
 #about:hover, #cube:hover,
@@ -34,10 +37,10 @@ font-family: "regular";
 }
 
 #about {
-    margin-left: 70%;
+    margin-left:auto;
   }
   #hero {
-    height: 700px;
+    height: 3000px;
     background: linear-gradient(rgba(3, 0, 0, 1), rgba(3, 0, 0, 1));
     background-image: url('/img/guitarHero2.jpg');
     background-repeat: no-repeat;
@@ -49,56 +52,64 @@ font-family: "regular";
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
+    animation: hero-move 15s infinite;
+    transition: ease-in-out;
   }
   #slogan {
     text-align: center;
   }
   #slogan span {
     font-family: "bold";
-    font-size: 4rem;
+    font-size: 14rem;
     letter-spacing: -5px;
     color: #08151d;
-    animation: fade-in 1s;
+   
   }
   
   #hero-text p {
     text-align: center;
     font-family: "bold";
     color: #08151d;
-    font-size: 3rem;
-    animation: fade-in 1s;
+    font-size: 13rem;
+
   
   }
- 
 
 .products {
  display: flex;
  flex-direction: column;
  align-items: center;
 padding-bottom: 50px;
+width: 100%;
 }
 #products-title, #cubo-title{
 font-family: "bold";
-font-size: 2.2rem;
+font-size: 10rem;
 color: #06141c;
    }
    #products-subtitle, #cubo-subtitle {
     font-family: "regular";
-font-size: 2.0rem;
+font-size: 9rem;
 color: #06141c;
    }
    .guitar {
     display: flex;
     flex-direction: row;
     align-items:center;
+    gap: 20px;
+    justify-content: space-around;
+    width: 100%;
    }
    .guitar-card {
-    width: 90%;
+    width: 23%;
+    border-radius: 20px ;
+    animation: pulse 2s infinite;
    }
    .guitar-card:hover {
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px ;
+    animation: shake 1s;
   }
    
    .information-guitar{
@@ -112,7 +123,7 @@ color: #06141c;
 text-align: center;
 justify-content: center;
 font-family:"bold";
-font-size: 1.5rem;
+font-size: 5rem;
    }
    .prize {
     display: flex;
@@ -120,11 +131,12 @@ font-size: 1.5rem;
     text-decoration: line-through;
     color: #615e5e;
     text-align: center;
+    font-size: 3rem;
    }
    .new-prize {
     font-family:"bold";
     color: red;
-    font-size: 1.5rem;
+    font-size: 5rem;
    }
    .buy-button {
     background-color: #3f7c41; 
@@ -135,13 +147,14 @@ font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 5rem;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
    }
    .guitars {
     width: 100%;
+   
    }
    .cubo {
     display: flex;
@@ -151,15 +164,19 @@ font-size: 1.5rem;
  background-color:#799094;
    }
    .cubo-card {
-    width: 100%;
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px ;
+    animation: pulse 2s infinite;
+    
    }
    .cubo-card:hover {
     box-shadow: 0 0px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px ;
+    animation: shake 1.0s;
   }
   .cubos {
     width: 90%;
@@ -185,6 +202,7 @@ font-size: 1.5rem;
  font-family: "regular";
  color: #06141c;
  padding-left: 20px;
+ font-size: 7rem;
   }
   .information-about {
     display: flex;
@@ -192,10 +210,13 @@ font-size: 1.5rem;
     font-family: "regular";
     flex-direction: column;
     color: #06141c;
-    gap: 20px;
+    gap: 80px;
     font-size:20px ;
     padding-left: 20px;
     
+  }
+  .text-about {
+    font-size: 5rem;
   }
   .text-about:hover {
     cursor: pointer;
@@ -204,7 +225,7 @@ font-size: 1.5rem;
 
   #about-text {
     font-family: "regular";
-    font-size: 16px;
+    font-size: 4rem;
   }
 
   #contact-card {
@@ -215,7 +236,7 @@ font-size: 1.5rem;
   #contact-card h1 {
     font-family: "regular";
     color: #06141c;
-
+    font-size: 7rem;
   }
 
 .text-contact {
@@ -224,23 +245,23 @@ font-size: 1.5rem;
     font-family: "regular";
     flex-direction: column;
     color: #06141c;
-    gap: 20px;
+    gap: 80px;
     font-size:20px ;
 }
 
 #contact-card hr {
 border: none; 
-height: 2px;
+height: 7px;
 background-color: #06141c; 
-margin: 0px 0 20px 0; 
+margin: 0px 0 90px 0; 
 
  }
 .about-card hr {
 border: none;
 width: 100%;
-height: 2px; 
+height: 7px; 
 background-color: #06141c; 
-margin: 0px 0 20px 0;
+margin: 0px 0 90px 0;
 margin-left: 20px;
 }
 footer {
@@ -250,25 +271,25 @@ background-color:#06141c;
 padding: 10px 20px;
 align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 50px;
 }
 footer p {
 color:#e8e5d2;
 font-family: "thin";
-font-size: 14px;
+font-size: 4rem;
 text-align: center;
 }
 .redes-sociais {
   display: flex;
   flex-direction: row;
-  width: 7%;
-  gap: 10px;
+  width: 10%;
+  gap: 30px;
   align-items: center;
   justify-content: center;
 }
 .redes-sociais img {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 70%;
   color:#e8e5d2 ;
 }
